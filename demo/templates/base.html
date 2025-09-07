@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Primepath - Digital Marketing Solutions{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="{% url 'home' %}"><i class="fas fa-chart-line"></i> Primepath</a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+           <ul class="nav-links">
+    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="{% url 'services' %}"><i class="fas fa-briefcase"></i> Services</a></li>
+    <li><a href="{% url 'about' %}"><i class="fas fa-users"></i> About</a></li>
+    <li><a href="{% url 'blog' %}"><i class="fas fa-newspaper"></i> Blog</a></li>
+    <li><a href="{% url 'careers' %}"><i class="fas fa-graduation-cap"></i> Careers</a></li>
+    <li><a href="{% url 'contact' %}"><i class="fas fa-phone"></i> Contact</a></li>
+</ul>
+            
+            <div class="nav-actions">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Primepath</h3>
+                <p>We help businesses grow with data-driven digital marketing strategies that deliver real results.</p>
+                <div class="social-links">
+                    
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/primepath_official?igsh=OG85eXptanY3YXU5"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CnxSgVm7S/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="{% url 'services' %}">SEO Optimization</a></li>
+                    <li><a href="{% url 'services' %}">PPC Advertising</a></li>
+                    <li><a href="{% url 'services' %}">Social Media Marketing</a></li>
+                    <li><a href="{% url 'services' %}">Email Marketing</a></li>
+                    <li><a href="{% url 'services' %}">Content Marketing</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'careers' %}">Careers</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            
+  <div class="footer-col">
+
+    <h3>Newsletter</h3>
+    <p>Subscribe to our newsletter for marketing tips and industry insights.</p>
+    <form id="newsletterForm" action="{% url 'newsletter_subscribe' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <div id="subscriptionMessage" style="display: none; margin-top: 10px; padding: 10px; border-radius: 5px;"></div>
+</div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Primepath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

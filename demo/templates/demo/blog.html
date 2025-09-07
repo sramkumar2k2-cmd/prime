@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}Primepath - Blog{% endblock %}
+
+{% block content %}
+<section class="hero" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
+    <div class="hero-content fade-in">
+        <h1>Digital Marketing Insights</h1>
+        <p>Expert tips, strategies, and industry news to help your business grow</p>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Latest Articles</h2>
+        <p>Stay updated with the latest trends in digital marketing</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="SEO Trends" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>5 SEO Trends That Will Dominate 2024</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> March 15, 2024</p>
+            <p>Discover the SEO trends that will shape the digital landscape in 2024 and how to prepare your website for them.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Social Media" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>How to Create Engaging Social Media Content</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> February 28, 2024</p>
+            <p>Learn proven strategies for creating social media content that captures attention and drives engagement.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="PPC Advertising" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>Maximizing ROI with Smart PPC Strategies</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> February 15, 2024</p>
+            <p>Discover how to optimize your PPC campaigns for maximum return on investment and better conversion rates.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Email Marketing" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>The Power of Personalized Email Marketing</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> January 30, 2024</p>
+            <p>Learn how personalization can transform your email marketing campaigns and significantly improve results.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Content Strategy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>Building a Content Strategy That Converts</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> January 18, 2024</p>
+            <p>Discover how to develop a content strategy that not only engages your audience but also drives conversions.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Analytics" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+            <h3>Understanding Analytics: Metrics That Matter</h3>
+            <p class="text-muted"><i class="far fa-calendar"></i> January 5, 2024</p>
+            <p>Learn which analytics metrics you should be tracking to measure the success of your digital marketing efforts.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="section-title">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest digital marketing tips and insights delivered to your inbox</p>
+    </div>
+    
+    <div class="text-center">
+        <form style="max-width: 500px; margin: 0 auto;">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe Now</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

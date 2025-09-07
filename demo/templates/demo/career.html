@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block title %}Primepath - Careers{% endblock %}
+
+{% block content %}
+<section class="hero" style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);">
+    <div class="hero-content fade-in">
+        <h1>Join Our Team</h1>
+        <p>Help us shape the future of digital marketing while growing your career</p>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Why Work at Primepath?</h2>
+        <p>We're building a culture where talented people can do their best work</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Continuous Learning</h3>
+            <p>We invest in your growth with regular training, workshops, and conference opportunities to keep your skills sharp.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-users"></i>
+            <h3>Collaborative Culture</h3>
+            <p>Work with a team of passionate experts who support each other and celebrate wins together.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-chart-line"></i>
+            <h3>Growth Opportunities</h3>
+            <p>As we grow, you grow. We provide clear career paths and opportunities for advancement.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-heart"></i>
+            <h3>Work-Life Balance</h3>
+            <p>We offer flexible working arrangements and understand that life exists outside the office.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="section-title">
+        <h2>Current Openings</h2>
+        <p>Join our team of digital marketing experts</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <h3>Senior SEO Specialist</h3>
+            <p class="text-accent">Full-time • Remote OK</p>
+            <p>We're looking for an experienced SEO professional to lead our search engine optimization efforts and drive organic growth for our clients.</p>
+            <ul>
+                <li>5+ years of SEO experience</li>
+                <li>Expert knowledge of technical SEO</li>
+                <li>Experience with enterprise SEO tools</li>
+                <li>Strong analytical skills</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Apply Now</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <h3>PPC Account Manager</h3>
+            <p class="text-accent">Full-time • On-site</p>
+            <p>Manage and optimize paid advertising campaigns across Google, Bing, and social media platforms for a portfolio of clients.</p>
+            <ul>
+                <li>3+ years of PPC experience</li>
+                <li>Google Ads certification preferred</li>
+                <li>Strong analytical skills</li>
+                <li>Client management experience</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Apply Now</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <h3>Content Marketing Strategist</h3>
+            <p class="text-accent">Full-time • Remote OK</p>
+            <p>Develop and execute content strategies that drive engagement, authority, and conversions for our clients.</p>
+            <ul>
+                <li>4+ years of content marketing experience</li>
+                <li>Excellent writing and editing skills</li>
+                <li>Experience with content planning tools</li>
+                <li>Understanding of SEO principles</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Apply Now</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <h3>Social Media Manager</h3>
+            <p class="text-accent">Part-time • Remote OK</p>
+            <p>Manage social media presence for clients, create engaging content, and grow communities across platforms.</p>
+            <ul>
+                <li>3+ years of social media management</li>
+                <li>Experience with social media tools</li>
+                <li>Content creation skills</li>
+                <li>Analytics and reporting experience</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Apply Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Our Hiring Process</h2>
+        <p>What to expect when you apply to DigitalBoost</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in text-center">
+            <div class="step-number">1</div>
+            <h3>Application Review</h3>
+            <p>We review your application and resume to ensure there's a good fit for the role.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="step-number">2</div>
+            <h3>Initial Interview</h3>
+            <p>A 30-minute video call to learn more about your experience and career goals.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="step-number">3</div>
+            <h3>Skills Assessment</h3>
+            <p>A practical assignment to demonstrate your skills and approach to work.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="step-number">4</div>
+            <h3>Team Interview</h3>
+            <p>Meet with potential team members to ensure cultural fit and collaboration.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="step-number">5</div>
+            <h3>Offer</h3>
+            <p>If it's a good fit, we extend an offer and welcome you to the team!</p>
+        </div>
+    </div>
+    
+    <div class="text-center mt-5">
+        <p>Don't see the perfect role but interested in working with us?</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary">Send Us Your Resume</a>
+    </div>
+</section>
+
+<style>
+    .step-number {
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 auto 20px;
+    }
+    
+    .text-accent {
+        color: var(--accent);
+        font-weight: 600;
+    }
+</style>
+{% endblock %}

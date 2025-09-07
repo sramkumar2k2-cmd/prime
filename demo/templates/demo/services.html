@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block title %}Primepath - Services{% endblock %}
+
+{% block content %}
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Our Digital Marketing Services</h2>
+        <p>Comprehensive solutions to grow your business online</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <i class="fas fa-search"></i>
+            <h3>SEO Optimization</h3>
+            <p>Improve your website's visibility in search engines and drive more organic traffic to your business with our comprehensive SEO strategies.</p>
+            <ul>
+                <li>Keyword Research & Analysis</li>
+                <li>On-Page Optimization</li>
+                <li>Technical SEO Audit</li>
+                <li>Content Strategy</li>
+                <li>Local SEO</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get Started</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-ad"></i>
+            <h3>PPC Advertising</h3>
+            <p>Maximize your ROI with targeted pay-per-click campaigns that convert visitors into customers across Google, Bing, and social media platforms.</p>
+            <ul>
+                <li>Google Ads Management</li>
+                <li>Social Media Advertising</li>
+                <li>Remarketing Campaigns</li>
+                <li>Conversion Rate Optimization</li>
+                <li>Performance Analytics</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Launch Campaign</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-share-alt"></i>
+            <h3>Social Media Marketing</h3>
+            <p>Engage with your audience and build your brand across all major social media platforms with our strategic approach.</p>
+            <ul>
+                <li>Social Media Strategy</li>
+                <li>Content Creation & Curation</li>
+                <li>Community Management</li>
+                <li>Influencer Partnerships</li>
+                <li>Social Media Analytics</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Grow Your Presence</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Marketing</h3>
+            <p>Nurture leads and drive conversions with personalized email campaigns that deliver results and build customer loyalty.</p>
+            <ul>
+                <li>Email Campaign Strategy</li>
+                <li>Automation Workflows</li>
+                <li>List Segmentation</li>
+                <li>A/B Testing</li>
+                <li>Performance Tracking</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Start Campaign</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-pencil-alt"></i>
+            <h3>Content Marketing</h3>
+            <p>Tell your brand's story with compelling content that attracts and engages your target audience across multiple channels.</p>
+            <ul>
+                <li>Content Strategy Development</li>
+                <li>Blog & Article Writing</li>
+                <li>Video Content Production</li>
+                <li>Infographic Design</li>
+                <li>Content Distribution</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Create Content</a>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-analytics"></i>
+            <h3>Analytics & Reporting</h3>
+            <p>Gain valuable insights into your marketing performance with detailed analytics and actionable reports.</p>
+            <ul>
+                <li>Google Analytics Setup</li>
+                <li>Conversion Tracking</li>
+                <li>Custom Dashboard Creation</li>
+                <li>Monthly Performance Reports</li>
+                <li>Data-Driven Recommendations</li>
+            </ul>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Get Insights</a>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="section-title">
+        <h2>Our Process</h2>
+        <p>How we deliver results for your business</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <i class="fas fa-chart-line"></i>
+            <h3>Discovery & Analysis</h3>
+            <p>We begin by thoroughly understanding your business, goals, and target audience to create a tailored strategy.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-cogs"></i>
+            <h3>Strategy Development</h3>
+            <p>Our team develops a comprehensive digital marketing strategy aligned with your business objectives.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-rocket"></i>
+            <h3>Implementation</h3>
+            <p>We execute the strategy with precision, using the latest tools and techniques to maximize results.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Optimization & Reporting</h3>
+            <p>We continuously monitor performance, make data-driven optimizations, and provide transparent reporting.</p>
+        </div>
+    </div>
+    
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Get Your Free Strategy Session</a>
+    </div>
+</section>
+{% endblock %}

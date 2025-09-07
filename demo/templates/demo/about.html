@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}Primepath - About Us{% endblock %}
+
+{% block content %}
+<section class="hero" style="background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);">
+    <div class="hero-content fade-in">
+        <h1>About Primepath</h1>
+        <p>We're passionate about helping businesses succeed in the digital world</p>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Our Story</h2>
+        <p>From startup to industry leader in digital marketing</p>
+    </div>
+    
+    <div class="contact-container">
+        <div class="fade-in">
+            <h3>Who We Are</h3>
+            <p>Primepath was founded in 2025 with a simple mission: to help businesses of all sizes succeed online. What started as a small team of digital marketing enthusiasts has grown into a full-service agency with clients across multiple industries.</p>
+            <p>Our team brings together experts in SEO, PPC, social media, content marketing, and web development to provide comprehensive digital solutions that drive real business growth.</p>
+        </div>
+        
+        <div class="fade-in">
+            <h3>Our Mission</h3>
+            <p>We believe that every business deserves access to effective digital marketing strategies. Our mission is to demystify digital marketing and provide transparent, results-driven services that help our clients achieve their business goals.</p>
+            <p>We're committed to staying at the forefront of industry trends and continuously improving our strategies to deliver the best possible results for our clients.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="section-title">
+        <h2>Our Values</h2>
+        <p>The principles that guide everything we do</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in">
+            <i class="fas fa-medal"></i>
+            <h3>Excellence</h3>
+            <p>We're committed to delivering exceptional results and exceeding client expectations in everything we do.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Integrity</h3>
+            <p>We believe in transparency, honesty, and doing what's right for our clients, even when no one is watching.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Innovation</h3>
+            <p>We continuously explore new ideas, strategies, and technologies to stay ahead in the rapidly evolving digital landscape.</p>
+        </div>
+        
+        <div class="service-card fade-in">
+            <i class="fas fa-handshake"></i>
+            <h3>Partnership</h3>
+            <p>We view ourselves as an extension of your team, working collaboratively to achieve your business goals.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="section-title">
+        <h2>Our Team</h2>
+        <p>Meet the experts behind Primepath</p>
+    </div>
+    
+    <div class="services-grid">
+        <div class="service-card fade-in text-center">
+            <div class="testimonial-avatar" style="margin: 0 auto 20px; width: 100px; height: 100px; font-size: 2.5rem;">SD</div>
+            <h3>Sarah Davis</h3>
+            <p class="text-accent">Founder & CEO</p>
+            <p>With over 15 years of experience in digital marketing, Sarah leads our team with vision and expertise.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="testimonial-avatar" style="margin: 0 auto 20px; width: 100px; height: 100px; font-size: 2.5rem;">MJ</div>
+            <h3>Michael Johnson</h3>
+            <p class="text-accent">SEO Director</p>
+            <p>Michael specializes in developing comprehensive SEO strategies that drive organic growth and visibility.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="testimonial-avatar" style="margin: 0 auto 20px; width: 100px; height: 100px; font-size: 2.5rem;">ER</div>
+            <h3>Emily Roberts</h3>
+            <p class="text-accent">Content Strategist</p>
+            <p>Emily creates compelling content strategies that engage audiences and drive conversions.</p>
+        </div>
+        
+        <div class="service-card fade-in text-center">
+            <div class="testimonial-avatar" style="margin: 0 auto 20px; width: 100px; height: 100px; font-size: 2.5rem;">DT</div>
+            <h3>David Thompson</h3>
+            <p class="text-accent">PPC Specialist</p>
+            <p>David optimizes paid advertising campaigns to maximize ROI and drive qualified leads.</p>
+        </div>
+    </div>
+    
+    <div class="text-center mt-5">
+        <a href="{% url 'careers' %}" class="btn btn-primary btn-lg">Join Our Team</a>
+    </div>
+</section>
+{% endblock %}
